@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Explorer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="photography.css" />
+  </head>
+  <body>
+    <header>
+      <a class="urban" href="city.html"> Urban Explorer</a>
+      <div class="burger-menu" id="burgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="unorder" id="navLinks">
+        <ul>
+          <a href="film.html"><li>Film</li></a>
+          <a href="photography.html"><li>Photography</li></a>
+          <a href="podcast.html"><li>Podcast</li></a>
+          <a href="about.html"> <li>About</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+        </ul>
+      </div>
+    </header>
+
+    <h1 class="title">Photography</h1>
+    <section class="main-grid">
+      <div id="grid" class="grid1">
+        <img src="image/cityb1.jpg" alt="" />
+      </div>
+      <div id="grid" class="grid2">
+        <img src="image/photograph2.jpg" alt="" />
+      </div>
+      <div id="grid" class="grid3">
+        <img src="image/photograph3.jpg" alt="" />
+      </div>
+      <div id="grid" class="grid4">
+        <img src="image/photograph4.jpg" alt="" />
+      </div>
+      <div id="grid" class="grid5">
+        <img src="image/photograph5.jpg" alt="" />
+      </div>
+    </section>
+
+    <article class="news">
+      <div class="sub-news">
+        <h1>Subscribe to our Newsletter</h1>
+
+        <div class="input">
+          <form action="">
+            <label for="email">Email: </label>
+            <input type="email" name="email" required />
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+    </article>
+
+    <footer>
+      <div class="main-footer">
+        <div class="footer">
+          <p>
+            Urban Explorer: Your gateway to city adventures. Discover, explore,
+            and fall in love with the urban landscape all over again.
+          </p>
+        </div>
+        <div class="footer">
+          <ul>
+            <a id="fb" href=""
+              ><li><i class="fa-brands fa-facebook"> </i> Facebook</li></a
+            >
+            <a id="ins" href=""
+              ><li><i class="fa-brands fa-instagram"> </i> Instagram</li></a
+            >
+            <a id="twi" href=""
+              ><li><i class="fa-brands fa-twitter"></i> Twitter</li></a
+            >
+          </ul>
+        </div>
+        <div class="footer">
+          <ul>
+            <a href="film.html"><li>Film</li></a>
+            <a href="photography.html"><li>Photography</li></a>
+            <a href="podcast.html"><li>Podcast</li></a>
+            <a href="about.html"> <li>About</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>
+        </div>
+      </div>
+      <div class="copyr">
+        <p>&copy; 2023 Urban Explorer. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      const burgerMenu = document.getElementById("burgerMenu");
+      const navLinks = document.getElementById("navLinks");
+
+      burgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

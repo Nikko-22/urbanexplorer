@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Explorer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="film.css" />
+  </head>
+  <body>
+    <header>
+      <a class="urban" href="index.html"> Urban Explorer</a>
+      <div class="burger-menu" id="burgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="unorder" id="navLinks">
+        <ul>
+          <a href="film.html"><li>Film</li></a>
+          <a href="photography.html"><li>Photography</li></a>
+          <a href="podcast.html"><li>Podcast</li></a>
+          <a href="about.html"> <li>About</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1 class="title">Film</h1>
+      <article>
+        <img src="image/film2.jpg" alt="" />
+        <h2>Urban City Chronicles</h2>
+        <p>
+          Experience the heart of the city through the lens of filmmakers who
+          capture its vibrant energy and dynamic lifestyle. From bustling
+          streets to hidden gems, discover stories that reveal the essence of
+          urban living.
+        </p>
+      </article>
+      <article>
+        <img src="image/film1.jpg" alt="" />
+        <h2>The Urban Film Revolution</h2>
+        <p>
+          Explore the evolution of urban cinema and how filmmakers have
+          portrayed city life over the decades. Delve into the innovations and
+          creative visions that have brought urban stories to the forefront of
+          the film industry.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <div class="main-footer">
+        <div class="footer">
+          <p>
+            Urban Explorer: Your gateway to city adventures. Discover, explore,
+            and fall in love with the urban landscape all over again.
+          </p>
+        </div>
+        <div class="footer">
+          <ul>
+            <a id="fb" href=""
+              ><li><i class="fa-brands fa-facebook"> </i> Facebook</li></a
+            >
+            <a id="ins" href=""
+              ><li><i class="fa-brands fa-instagram"> </i> Instagram</li></a
+            >
+            <a id="twi" href=""
+              ><li><i class="fa-brands fa-twitter"></i> Twitter</li></a
+            >
+          </ul>
+        </div>
+
+        <div class="footer">
+          <ul>
+            <a href="film.html"><li>Film</li></a>
+            <a href="photography.html"><li>Photography</li></a>
+            <a href="podcast.html"><li>Podcast</li></a>
+            <a href="about.html"> <li>About</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>
+        </div>
+      </div>
+      <article class="news">
+        <div class="sub-news">
+          <h1>Subscribe to our Newsletter</h1>
+
+          <div class="input">
+            <form action="">
+              <label for="email">Email: </label>
+              <input type="email" name="email" required />
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </article>
+      <div class="copyr">
+        <p>&copy; 2023 Urban Explorer. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      const burgerMenu = document.getElementById("burgerMenu");
+      const navLinks = document.getElementById("navLinks");
+
+      burgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Explorer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="city.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <h1 class="logo">Urban Explorer</h1>
+        <div class="burger-menu" id="burgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="unorder" id="navLinks">
+          <ul>
+            <a href="film.html"><li>Film</li></a>
+            <a href=""><li>Photography</li></a>
+            <a href=""><li>Podcast</li></a>
+            <a href=""> <li>About</li></a>
+            <a href=""><li>Contact</li></a>
+          </ul>
+        </div>
+      </header>
+    </section>
+    <footer>
+      <div class="main-footer">
+        <div class="footer">
+          <p>
+            Urban Explorer: Your gateway to city adventures. Discover, explore,
+            and fall in love with the urban landscape all over again.
+          </p>
+        </div>
+        <div class="footer">
+          <ul>
+            <a id="fb" href=""
+              ><li><i class="fa-brands fa-facebook"> </i> Facebook</li></a
+            >
+            <a id="ins" href=""
+              ><li><i class="fa-brands fa-instagram"> </i> Instagram</li></a
+            >
+            <a id="twi" href=""
+              ><li><i class="fa-brands fa-twitter"></i> Twitter</li></a
+            >
+          </ul>
+        </div>
+      </div>
+      <div class="copyr">
+        <p>&copy; 2023 Urban Explorer. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      const burgerMenu = document.getElementById("burgerMenu");
+      const navLinks = document.getElementById("navLinks");
+
+      burgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
