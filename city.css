@@ -610,7 +610,7 @@ button {
   .burger-menu span {
     width: 1.5625rem;
     height: 0.1875rem;
-    background: black;
+    background: rgb(255, 255, 255);
     margin: 0.3125rem;
   }
 
@@ -622,8 +622,8 @@ button {
     position: absolute;
     top: 3.75rem;
     right: 0;
-    background: white;
-    width: 12.5rem;
+    background: rgb(103, 159, 207);
+    width: 100%;
     height: auto;
     z-index: 10;
   }
