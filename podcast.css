@@ -84,28 +84,30 @@ header a {
   display: none;
 }
 
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 2rem;
-  margin-top: 3em;
-  padding: 0.625rem;
-  color: #2c2c2c;
-}
-
-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+img {
   width: 100%;
-  height: 100%;
 }
 
 .main-sec {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 1rem;
+  padding: 20px;
+}
+
+.min-sec {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 5;
+  gap: 0;
+  grid-auto-flow: row;
+  padding: 10px;
+  border: 1px solid #ddd;
+
+  & i {
+    font-size: 3rem;
+    color: var(--accent);
+  }
 }
 
 .split {
@@ -113,49 +115,15 @@ section {
   justify-content: space-between;
 }
 
-.sub-section {
-  padding: 1.25rem;
+.title {
   display: flex;
-  flex-direction: row;
-}
-
-.min-sec {
-  padding: 0.625rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5em;
-  width: 100%;
-  box-shadow: 0.0625rem 0.125rem 0.125rem rgba(0, 0, 0, 0.2);
-}
-
-.min-sec i {
-  font-size: 3.125rem;
-}
-
-.min-sec a {
-  color: var(--accent);
-  cursor: pointer;
-}
-
-picture img {
-  width: 100%;
-  height: 100%;
-  width: 18.75rem;
-  object-fit: cover;
-}
-
-main {
-  display: flex;
-  flex-direction: row;
-}
-
-picture {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 1.25rem;
+  justify-content: center;
 
-  height: 100vh;
+  font-size: 4rem;
+  margin-top: 1em;
+  padding: 0.625rem;
+  color: var(--background-color);
 }
 
 .news {
@@ -169,8 +137,8 @@ picture {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #222;
-  color: #fff;
+  background-color: var(--background-color);
+  color: var(--text-color);
   width: 100%;
   height: 12.5rem;
 }
@@ -189,7 +157,7 @@ picture {
   justify-content: center;
   border-radius: 0.625rem;
   flex-direction: column;
-  background-color: #60a5fa;
+  background-color: var(--accent);
   width: 100%;
   height: 25rem;
 }
@@ -243,7 +211,7 @@ button {
 
 .copyr {
   background-color: #111;
-  color: #f9f9f9;
+  color: var(--text-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -287,28 +255,6 @@ footer ul li {
 }
 
 @media screen and (min-width: 20rem) {
-  main {
-    flex-direction: column;
-    min-height: 300vh;
-  }
-
-  .sub-section {
-    padding: 0;
-  }
-
-  picture {
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    min-height: 350vh;
-  }
-
-  picture img {
-    min-width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
   input {
     width: 13.75rem;
   }
@@ -392,21 +338,6 @@ footer ul li {
 }
 
 @media screen and (min-width: 48rem) {
-  main {
-    flex-direction: row;
-    min-height: 100vh;
-  }
-
-  picture {
-    flex-direction: column;
-    width: 100%;
-    min-height: 400vh;
-  }
-
-  picture img {
-    width: 100%;
-  }
-
   input {
     width: 9.375rem;
   }
@@ -425,22 +356,6 @@ footer ul li {
 }
 
 @media screen and (min-width: 64rem) {
-  main {
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  picture {
-    flex-direction: row;
-    width: 100%;
-
-    min-height: 100vh;
-  }
-
-  picture img {
-    width: 100%;
-  }
-
   input {
     width: 34.375rem;
   }
